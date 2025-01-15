@@ -1,6 +1,7 @@
 from collections import deque
 
-# bfs
+# programmers: 게임 맵 최단거리 bfs
+# 최단거리는 bfs가 적절함. dfs는 모두 찾아봐야 하기 때문
 
 def solution(maps):
     dx = [-1, 1, 0, 0]
