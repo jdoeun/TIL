@@ -1,0 +1,5 @@
+-- programmers: 조건에 맞는 회원수 구하기
+
+SELECT COUNT(USER_ID) AS USERS
+FROM USER_INFO
+WHERE AGE >= 20 AND AGE <= 29 AND SUBSTR(JOINED,1,4) = '2021';
