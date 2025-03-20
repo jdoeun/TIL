@@ -1,4 +1,4 @@
--- programmers: 대장균의 크기에 따라 분류하기 2
+-- 대장균의 크기에 따라 분류하기 2
 
 SELECT A.ID,
 CASE
