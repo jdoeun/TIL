@@ -1,0 +1,10 @@
+-- programmers: 입양 시각 구하기(2)
+
+SET @HOUR := -1; -- 변수 선언문
+
+SELECT (@HOUR := @HOUR + 1) AS HOUR,
+    (SELECT COUNT(DATETIME)
+     FROM ANIMAL_OUTS
+     WHERE HOUR(DATETIME) = @HOUR) AS COUNT
+FROM ANIMAL_OUTS
+WHERE @HOUR < 23
