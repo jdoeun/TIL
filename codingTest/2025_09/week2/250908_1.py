@@ -1,7 +1,7 @@
-# BOJ: 2468 안전영역 BFS
+# BOJ: 2468 안전영역 DFS
 
 import sys
-sys.setrecursionlimit(100000) #??
+sys.setrecursionlimit(100000) # 파이썬은 기본 재귀 제한이 1000인데 이것을 늘림
 
 N = int(input())
 height = []
