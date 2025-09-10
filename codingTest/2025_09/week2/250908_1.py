@@ -24,7 +24,7 @@ def dfs(x, y, h):
         return
 
     if visited[x][y]:
-        return
+        return # if문들 있는 이유는 재귀에서 퍼져나갈 때는 직접 체크해야 하기때문
 
     if height[x][y] <= h:
         return
