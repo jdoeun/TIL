@@ -24,8 +24,7 @@ def bfs(x, y, direction):
             room_list[x][y] = 2 # 청소 완료 처리
             count += 1
 
-        # 2번) 왼쪽 방향부터 탐색
-        moved = False
+        # 3번) 왼쪽 방향부터 탐색
         for _ in range(4):
             d = (d + 3) % 4 # 왼쪽 회전
             nx, ny = x + dx[d], y + dy[d]
@@ -35,8 +34,8 @@ def bfs(x, y, direction):
                 moved = True
                 break
 
-        # 3번) 네 방향 모두 청소할 곳이 없었다면 후진
-        if not moved:
+        # 2번) 네 방향 모두 청소할 곳이 없었다면 후진
+        else:
             bx, by = x - dx[d], y - dy[d]
 
             if 0 <= bx < N and 0 <= by < M and room_list[bx][by] != 1:
