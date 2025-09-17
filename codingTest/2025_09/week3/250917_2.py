@@ -23,8 +23,8 @@ def left(idx, d):
         sawtooth[idx].rotate(d)
 
 # 톱니바퀴 4개 입력받기
-sawtooth = [deque(map(int, input())) for _ in range(4)]
-k = int(input()) # 회전 횟수
+sawtooth = [deque(map(int, input().strip())) for _ in range(4)]
+k = int(input().strip()) # 회전 횟수
 
 for _ in range(k):
     # 회전 정보(회전 톱니 번호 인덱스, 회전 방향) 입력받기
